@@ -1,8 +1,22 @@
-asgiref==3.9.1
-Django==5.2.6
-djangorestframework==3.16.1
-gunicorn==23.0.0
-packaging==25.0
-psycopg2-binary==2.9.10
-sqlparse==0.5.3
-typing_extensions==4.15.0
+# Core framework
+Django>=5.0,<5.2
+djangorestframework>=3.14
+
+# Database (PostgreSQL)
+psycopg2-binary>=2.9
+
+# WSGI server (for production)
+gunicorn>=21.2
+
+# Static files & compression
+whitenoise>=6.6
+Pillow>=10.0   # for image uploads
+
+# CORS handling (API / React frontend)
+django-cors-headers>=4.3
+
+# Environment variables
+python-dotenv>=1.0
+
+# Optional but useful
+requests>=2.31
